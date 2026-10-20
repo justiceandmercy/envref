@@ -1,0 +1,18 @@
+[project]
+name = "envref"
+version = "0.1.0"
+description = "Compare environment variable references in source code with .env.example."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "envref contributors" }]
+
+[project.scripts]
+envref = "envref:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["envref"]
